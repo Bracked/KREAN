@@ -1,0 +1,23 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 95px 0;
+    z-index: 10;
+    padding: 20px 0;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    @media screen and (min-width:556px) {
+        padding: 40px 0;
+      }
+
+    @media screen and (min-width:992px) {
+        padding: 95px 0;
+      }
+}

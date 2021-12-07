@@ -1,0 +1,70 @@
+.references {
+    padding: 108px 0;
+    &__content {
+        margin-top: 101px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    &__left {
+        min-height: 100px;
+        flex:1 0 450px;
+    }
+
+    &__imgBox {
+        width: 100%;
+        height: 450px;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 135px;
+            left: -33px;
+            width: 79.33%;
+            height: 79.33%;
+            background: url("../img/Shape_3.png");
+            // opacity: 0.38;
+            z-index: -1;
+
+        }
+    }
+
+    &__right {
+        flex:1 1 auto ;
+        margin-left: 67px;
+    }
+
+    &__name {
+        color:var(--color-mine-shaft);
+        font-size: 45px;
+        font-family: "Ubuntu";
+        font-weight: 700;
+    }
+
+    &__text {
+        color: var(--color-mine-shaft);
+        font-size: 25px;
+        font-weight: 300;
+        font-family: "Ubuntu";
+        margin-top: 50px;
+    }
+
+    &__left-arrow , &__right-arrow {
+        position: absolute;
+        transform: translateY(-50%);
+    }
+
+    &__left-arrow {
+        left: -113px;
+        top:50%;
+
+    }
+
+    &__right-arrow {
+        right: -113px;
+        transform: rotate(180deg);
+    }
+}

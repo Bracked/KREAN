@@ -1,0 +1,19 @@
+.main-header {
+    color:var( --color-boulder);
+    font-size: 30px;
+    font-weight: 500;
+    font-family: "Ubuntu";
+    position: relative;
+    text-align: center;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -19px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50px;
+        height: 2px;
+        background-color: #4a4a4a;
+    }
+}

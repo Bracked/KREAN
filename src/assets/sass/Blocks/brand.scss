@@ -1,0 +1,8 @@
+.brand {
+    padding-bottom: 102px;
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

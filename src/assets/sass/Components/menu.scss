@@ -1,0 +1,25 @@
+.menu {
+
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__item {
+        margin-left: 53px;
+
+        a {
+            color:var(--color-white);
+            font-size: 25px;
+            font-weight: 700;
+            font-family: "Ubuntu";
+            
+        }
+    }
+
+    @media screen and (max-width:992px) {
+        display: none;
+        
+    }
+}

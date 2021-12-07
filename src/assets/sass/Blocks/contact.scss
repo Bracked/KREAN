@@ -1,0 +1,78 @@
+.contact {
+    padding: 150px 0 96px;
+    background-color: var(--color-black);
+
+    &__header {
+        color: var(--color-white);
+        font-size: 30px;
+        font-family: "Ubuntu";
+        font-weight: 700;
+        text-align: center;
+    }
+
+    &__form {
+        
+    }
+
+    &__input {
+        margin-top: 69px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__name, &__email,textarea {
+       background-color: var(--color-black);
+       border-bottom: 1px solid #c6c6c6;
+       color: var(--color-white);
+       font-size: 21px;
+        font-weight: 300;
+        font-family: "Ubuntu";
+
+       &::placeholder {
+        color:var(--color-input);
+        font-size: 21px;
+        font-weight: 300;
+        font-family: "Ubuntu";
+        }
+    }
+
+    &__name {
+       flex:0 1 50%;
+       padding: 0 0 29px 38px;
+
+       
+    }
+
+    &__email {
+        flex:0 1 50%;
+        margin-left: 45px;
+       padding: 0 0 29px 38px;
+
+    }
+
+    textarea {
+        margin-top: 147px;
+        display: block;
+        resize: none;
+        min-height: 50px;
+        width: 100%;
+       padding: 0 0 0 38px;
+    }
+
+    &__submit {
+        margin-top: 72px;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        
+        button {
+            background-color: #202020;
+            padding: 34px 82px;
+            color:var(--color-white);
+            font-size: 30px;
+            font-weight: 400;
+            font-family: "UniNeueRegular";
+        }
+    }
+}

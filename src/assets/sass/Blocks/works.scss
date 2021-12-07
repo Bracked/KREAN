@@ -1,0 +1,75 @@
+.works {
+
+    &__container {
+
+    }
+
+    &__header {
+
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3,450px);
+        grid-template-rows: repeat (3,450px);
+        gap:64px;
+        margin-top: 81px;
+    }
+
+    &__item {
+        height: 450px;
+        background-color: #000;
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__hide-block {
+        background-color: #616161;
+        background-image: linear-gradient(to top, rgba(47, 61, 252, 0.42) 0%, rgba(100, 17, 135, 0.42) 73%, rgba(100, 17, 135, 0.42) 100%);
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: opacity 0.4s;
+        display: flex;
+        align-items: flex-end;
+        padding: 79px 53px;
+
+        &:hover {
+        opacity: 0.88;
+
+        }
+    }
+
+    &__hide-block-content {
+
+    }
+
+    &__hide-header {
+        color:var(--color-white);
+        font-family: "Ubuntu";
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    &__hide-year {
+        color:var(--color-white);
+        font-family: "Ubuntu";
+        font-size: 30px;
+        font-weight: 300;
+        margin-top: 9px;
+    }
+
+}
+
+.grid-big {
+    grid-row: 2 span;
+    height: 100%;
+}
